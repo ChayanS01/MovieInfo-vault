@@ -1,0 +1,227 @@
+body{
+  background: #2d2d2d;
+  color: white;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-family: SF Pro Text;
+    justify-content: space-between; /* add this to distribute elements */
+  }
+  
+  .nav p {
+    font-weight: bold;
+    margin-right: auto; /* push the p tag to the left */
+    margin-left: 20px;
+  }
+  
+  .anchor-container {
+    flex: 1; /* take up the remaining space */
+    display: flex; /* make this a flex container */
+    justify-content: center; /* center its children */
+  }
+  
+  .anchor-nav {
+    margin:0 25px; /* add some margin between anchor tags */
+    color: #ded7d7;
+  }
+  .anchor-nav:hover{
+    font-weight: bold;
+    color: white;
+  }
+  .image-nav{
+    width: 30px;
+    margin: 0 10px;
+  }
+
+  /* Banner image */
+
+.banner-image{
+  width: 1600px;
+  height: 855px;
+}
+.trending-movies{
+  margin: 15px 0px 10px 40px;
+  font-family: SF Pro Text;
+  font-weight: bold;
+}
+.forward-arrow-img{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  }
+/* Movie card image , movie-name*/
+
+
+.moviecard-1{
+  height: 154px;
+  width: 290px;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+  margin-left: -12px;
+  margin-right: -6px;
+}
+.shelf-list{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+.movie-name{
+  font-family: SF Pro Text;
+  margin: 6px -3px 0px;
+  font-size: 15px;
+  color: #FFFFFFEB;
+  font-weight: bold;
+}
+.movie-genre{
+  margin: -2px;
+  padding: 0px;
+  font-size: 12px;
+  color: #FFFFFFA3;
+  
+}
+.line-break:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #4b4747a3;
+    margin: 30px -10px 50px -10px;
+}
+
+
+
+/* Movie card information editing */
+/* IMDB icon edit */
+.popup h1{
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-color: rgb(0, 0, 0);
+  font-size: 35px;
+  text-align: center;
+  
+}
+.popup p{
+  padding: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+.movie-title{
+  margin-top: -50px ;
+  color: rgb(188, 185, 185);
+}
+.apple-logo{
+  margin: 30px;
+  width: 60px;
+  height: 22px;
+  color: white;
+
+}
+.box-image{
+  margin: 20px 0px 0px 315px;
+  height: 154px;
+  width: 270px;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+.movie-description{
+  color: rgb(137, 137, 141);
+  font-weight: bold;
+}
+.smallimage-container{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 5px;
+}
+.imdb-text, .rotten-tomatoes-text {
+  font-family: SF Pro Text;
+  color: rgb(223, 215, 215);
+  font-weight: bold;
+  margin: -4px; /* Adjust spacing as needed */
+  padding: 0px;
+  text-align: center; /* Center text horizontally */
+}
+
+ .imdb-icon{
+  width: 50px;
+  height: 55px; 
+}
+ .rotten-tomatoes{
+  margin-right: -6px;
+  width: 40px;
+  height: 30px;
+}
+
+body{
+  font-family: SF Pro Text;
+}
+.overlay {
+  position: fixed; /* Fixed position so it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  z-index: 10; /* Behind the popup but above other content */
+}
+
+/* Popup styling */
+.popup-content {
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 100%);
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  z-index: 11; 
+  width: 900px;
+  height: 600px; /* Optional: Adjust based on your design */
+   /* Set a max width */
+}
+.watchlist-btn{
+  margin: -10px 25px ;
+  float: right;
+  font-weight: bold;
+  border: 1px solid transparent;
+  background: #3284ed;
+  color: white;
+  font-size: 15px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+}
+.watchlist-btn:hover{
+  background: white;
+  color: #3284ed;
+}
+
+.popup .popup-content .controls{
+
+  color: #3284ed;
+  font-weight: bold;
+  background: white;
+  margin: -10px 0px 0px 25px ;
+  padding: 4px 15px 4px 15px;
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.popup .popup-content .controls:hover{
+  background: black;
+  color: white;
+}
