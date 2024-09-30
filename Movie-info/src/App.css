@@ -36,6 +36,16 @@ body{
     width: 30px;
     margin: 0 10px;
   }
+  .search-logo{
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 0px 4px 4px;
+  }
+  .search-logo:hover{
+    color: #3284ed;
+  }
 
   /* Banner image */
 
@@ -297,9 +307,10 @@ body{
   color: white;
 }
 .moviecard-1-2{
-  height: 270px;
-  width: 200px;
+  height: 370px;
+  width: 260px;
   margin-top: 50px;
+  border-radius: 10px;
 }
 .search-focused {
   border: 3px solid #3284ed; /* Example: Change border color */
