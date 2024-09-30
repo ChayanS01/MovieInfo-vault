@@ -22,7 +22,7 @@ function ExploreMovieCard({ movie }) {
         
           
           <li key={movie.id} onClick={() => onMovieClick(movie)}>
-            <img className='moviecard-1-2' src={movie.Poster} alt={movie.title} />
+            <img className='moviecard-1-2' src={movie.Poster} />
             <p className='movie-name'>{movie.Title}</p>
             <p className='movie-genre'>{movie.genre}</p>
             <div className='line-break'>
