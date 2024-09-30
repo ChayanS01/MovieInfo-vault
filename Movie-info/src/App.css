@@ -216,7 +216,7 @@ body{
   background: white;
   margin: -10px 0px 0px 25px ;
   padding: 4px 15px 4px 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(77, 75, 75);
   border-radius: 2px;
   outline: none;
   cursor: pointer;
@@ -224,4 +224,85 @@ body{
 .popup .popup-content .controls:hover{
   background: black;
   color: white;
+}
+
+
+
+
+
+
+/* Css style for movie card coming from API data */
+
+.box-image2{
+  margin: 20px 0px 0px 402px;
+  height: 254px;
+  width: 195px;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+.popup-content2{
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 100%);
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  z-index: 11; 
+  width: 1000px;
+  height: 650px; /* Optional: Adjust based on your design */
+   /* Set a max width */
+}
+.watchlist-btn2{
+  margin: -50px 25px ;
+  float: right;
+  font-weight: bold;
+  border: 1px solid transparent;
+  background: #3284ed;
+  color: white;
+  font-size: 15px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+}
+.watchlist-btn2:hover{
+  background: white;
+  color: #3284ed;
+}
+.controls2{
+
+  /* color: #3284ed;
+  font-weight: bold;
+  background: white;
+  margin: -0px 0px 0px 25px ;
+  padding: 4px 15px 4px 15px;
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer; */
+  font-weight: bold;
+  border: 1px solid rgb(77, 75, 75);;
+  background: white;
+  color: #3284ed;
+  font-size: 15px;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+}
+.controls2:hover{
+  background: black;
+  color: white;
+}
+.moviecard-1-2{
+  height: 270px;
+  width: 200px;
+  margin-top: 50px;
+}
+.search-focused {
+  border: 3px solid #3284ed; /* Example: Change border color */
+  outline: none;
+  background-color: #f0f8ff; /* Example: Light background */
 }
