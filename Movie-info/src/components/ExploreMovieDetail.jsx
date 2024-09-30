@@ -9,9 +9,8 @@ function ExploreMovieDetail({ movie, onClose }) {
     const location = useLocation();
     const movieDetails = location.state.movieDetails;
 
-    const [selectedMovie, setSelectedMovie] = useState(null);
     const handleClosePopup = () => {
-        setSelectedMovie(null);
+        onClose();
       };
 
 
@@ -24,7 +23,7 @@ function ExploreMovieDetail({ movie, onClose }) {
           <h1 className='movie-title'>{movieDetails.Title}</h1>
           <img className='box-image2' src={movieDetails.Poster} alt="" />
           <p className='movie-description'>{movieDetails.Plot}</p>
-          <p>Genre: {movieDetails.Genre}</p>
+          <p>Genre:{movieDetails.Genre}</p>
           <p>First Episode Date: {movieDetails.Released}</p>
           <p>Directed by: {movieDetails.Director}</p>
           <p>Created by: {movieDetails.Writer}</p>
